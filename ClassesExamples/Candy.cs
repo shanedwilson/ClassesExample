@@ -6,17 +6,18 @@ namespace ClassesExamples
 {
     class Candy
     {
+        //Properties
         public string Flavor { get; }
         public int Rating { get; private set; }
         public string Review { get; private set; }
         public string Name { get; }
         public CandyType Type { get; }
 
+        //Fields
         const int MinRatingValue = 1;
         const int MaxRatingValue = 10;
 
-
-
+        //Constructor
         public Candy (string flavor,string name, CandyType type)
         {
             Flavor = flavor;
@@ -38,6 +39,7 @@ namespace ClassesExamples
 
         }
 
+        //Method
         public void SetRating (int userRating, string review)
         {
             SetRating(userRating);
